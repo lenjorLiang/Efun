@@ -1,0 +1,21 @@
+server:
+  port: 8080
+  context-path: /demo
+  tomcat:
+    uri-encoding: UTF-8  
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/dbgirl?characterEncoding=UTF-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+#cupSize: BBBB
+#girl:
+#  age: 18
+#  name: 笨蛋
